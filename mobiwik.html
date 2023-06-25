@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<di>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mobi
+        {
+            width: 100%;
+            height:800px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-around;
+        }
+        #mobi>div:nth-child(1)
+        {
+            width: 20%;
+            height: 100%;
+            border: 1px solid blue;
+
+        }
+        #mobi>div:nth-child(2)
+        {
+            width: 75%;
+            height: 100%;
+            border: 1px solid blue;
+
+        }
+       
+        
+        
+
+        #mobi>div:nth-child(2)>div:nth-child(1)
+        {
+            width: 90%;
+            height: 80px;
+            border: 1px solid green;
+            margin: auto;
+        }
+        #mobi>div:nth-child(2)>div:nth-child(2)
+        {
+            width: 90%;
+            height: 300px;
+            border: 1px solid black;
+            margin: auto;
+            display: flex;
+        }
+        #mobi>div:nth-child(2)>div:nth-child(3)
+        {
+            width: 90%;
+            height: 300px;
+            border: 1px solid black;
+            margin: auto;
+            display: flex;
+        }
+    
+        @media screen and (max-width:1080px){
+            #mobi>div:nth-child(1)
+            {
+                display: none;
+            }
+            #mobi>div:nth-child(2)
+            {
+                width:90%;
+                margin: auto;
+                border: 1px solid brown;
+                height: 1000px;
+                margin-top: 0;
+
+            }
+            
+            #mobi>div:nth-child(2)>div:nth-child(2)
+            {
+                display: flex;
+                flex-direction: column;
+            }
+        #mobi>div:nth-child(2)>div:nth-child(2)>div>input
+        {
+                width: 100%;
+        }
+        
+        #mobi>div:nth-child(2)>div:nth-child(3)
+            {
+                display: flex;
+                flex-direction: column;
+            }
+            #mobi>div:nth-child(2)>div:nth-child(3)>div>
+        {
+                width: 100%;
+                height: 100%;
+                border: 1px solid black;
+
+            }
+        
+      
+    }
+    </style>
+</head>
+<body>
+    <div id="mobi">
+        <div>left side</div>
+        <div>
+            <div>navbar</div>
+            <div>
+                <div>
+                    <label>Number</label><br>
+                    <input/>
+                </div>
+                <div>
+                    <label>Operator</label><br>
+                    <input/>
+                </div>
+                <div>
+                    <label>Circle</label><br>
+                    <input/>
+                </div>
+                <div>
+                    <label>Amount</label><br>
+                    <input/>
+                </div>
+            
+            </div>
+            <div>
+                <div>phone recharge</div>
+                <div> bill payment</div>
+                <div>shopping</div>
+                <div>transfer</div> 
+            </div>
+        
+               
+            
+        </div>
+
+        
+    </div>
+</body>
+</html>
